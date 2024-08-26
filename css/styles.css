@@ -19,7 +19,7 @@ body{
     "footer"
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 20%  10% 13.75% 13.75% 13.75% 13.75% 5%;
+    grid-template-rows: 10% 90%  10% 13.75% 13.75% 13.75% 13.75% 5%;
 }
 
 .borde{
