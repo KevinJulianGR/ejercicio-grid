@@ -19,7 +19,7 @@ body{
     "footer"
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 90%  10% 13.75% 13.75% 13.75% 13.75% 5%;
+    grid-template-rows: 10% 90%  20% 25% 25% 25% 25% 10%;
 }
 
 .borde{
@@ -46,7 +46,7 @@ header{
 
 #header-menu{
     display: flex;
-    background-color: aquamarine;
+    background-color: white;
     height: 60%;
     justify-content: center;
     gap: 80px;
@@ -71,7 +71,7 @@ header{
 
 #menu2 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 #section1{
@@ -80,6 +80,12 @@ header{
 
 #section2{
     grid-area: section2;
+    display: flex;
+}
+
+#section2 div{
+    height: 100%;
+    width: 100%;
 }
 
 #section3{
@@ -101,4 +107,36 @@ header{
 
 footer{
     grid-area: footer;
+}
+
+@media (max-width: 768px){
+    body{
+        grid-template-rows: 10% 80%  20% 25% 25% 25% 25% 10%;
+    }
+    #section2{
+        grid-area: section2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #section2 div{
+        height: 50%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 375px){
+    body{
+        grid-template-rows: 10% 95%  20% 25% 25% 25% 25% 10%;
+    }
+    #section2{
+        grid-area: section2;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section2 div{
+        height: 25%;
+        width: 100%;
+    }
 }
